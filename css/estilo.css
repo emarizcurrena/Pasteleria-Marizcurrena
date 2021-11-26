@@ -1,0 +1,441 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*grid pagina index*/
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "search search"
+    "tira tira"
+    "desc desc"
+    "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70px 60px auto auto 100px; 
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+form {
+    grid-area: search;
+}
+footer {
+    grid-area: footer;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+/* estilos nav bar */
+#logoHeader{
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.navbar__background {
+    background-color:blueviolet;
+}
+.navbar--position {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+    list-style: none;
+}
+.navbar--position a {
+    text-decoration: none;
+    color: white;
+}
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    
+}
+.searchBar{
+    display: flex;
+    justify-content: end;
+}
+/* estilos tira imagenes */
+.tira {
+    grid-area: tira;
+    background-image: url(https://image.freepik.com/free-vector/pastries-desserts-collection-set-hand-drawn-style_34259-414.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.5);
+}
+.resumen__fondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.fotoTira {
+    height: 300px;
+    padding: 10px;
+    display: flex;
+}
+/* estilos descripcion */
+.descripcion {
+    grid-area: desc;
+    padding: 30px 60px;
+}
+/* estilos footer */
+#logoFooter {
+    height: 80%;
+    padding-left: 60px;
+}
+footer div {
+    display: flex;
+    align-items: center;
+}
+.links__footer {
+    display: flex;
+}
+.links__footer h3 {
+    padding: 0 100px 0 50px;
+    border-right-style: solid;
+    border-right-color: indigo;
+    border-right-width: 5px;
+}
+.links__footer h3:last-child{
+    border: none;
+}
+
+
+/*grid pagina productos*/
+.gridProductos{
+display: grid;
+grid-template-areas: 
+"header nav"
+"search search"
+"indice indice"
+"contenido contenido"
+"footer footer";
+grid-template-columns: 20% 80%;
+grid-template-rows: 70px 60px auto auto 100px;
+}
+
+
+.indiceProductos {
+    grid-area: indice;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.listaProductos {
+    grid-area: contenido;
+    padding: 40px 20px;
+}
+
+th img {
+    height: 100px;
+    padding: 5px;
+}
+td {
+    text-align: center;
+}
+
+/*estilos contenido productos*/
+.productoInfo {
+    display: flex;
+    margin-bottom: 10px;
+}
+.productoInfo img {
+height: 200px;
+}
+.nombreProducto {
+    padding-left: 10px;
+}
+
+/*grid pagina pedidos*/
+.gridPedido {
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "search search"
+    "titulo titulo"
+    "pedido pedido"
+    "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70px 60px auto auto 100px;
+}
+.titulo__pedido {
+    grid-area: titulo;
+    display: flex;
+    flex-basis: content;
+}
+.pedido {
+    grid-area: pedido;
+    background-image: url(https://image.freepik.com/free-vector/pastries-desserts-collection-set-hand-drawn-style_34259-414.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.5);
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+/* estilos pedidos */
+
+.pedido form {
+    background-color: #ffffffd6;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.54);
+}
+
+.titulo__pedido {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.titulo__seccion {
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding-left: 20px;
+}
+
+/*grid pagina Eventos*/
+.gridEventos {
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "search search"
+    "evento1 evento1"
+    "evento2 evento2"
+    "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70px 60px auto auto 100px;
+}
+.eventoUno {
+    grid-area: evento1;
+    display: inline;
+    margin-bottom: 30px;
+    justify-self: center;
+}
+.eventoDos {
+    grid-area: evento2;
+    display: inline;
+    margin-bottom: 30px;
+    justify-self: center;
+}
+.eventoUno img {
+    width: 300px;
+}
+.eventoDos img {
+    width: 300px;
+}
+/*grid pagina Nosotros*/
+.gridNosotros {
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "search search"
+    "equipo equipo"
+    "ubicacion ubicacion"
+    "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70px 60px auto auto 100px;
+}
+
+.nosotros {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.equipo {
+    grid-area: equipo;  
+}
+
+.nosotros img {
+    width: 600px;
+}
+
+.nosotros iframe {
+    width: 600px;
+    height: 450px;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+    margin-bottom: 20px;
+}
+
+
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	/* Index */
+	.gridContainer {
+		display: grid;
+		grid-template-areas: 
+		"header"
+        "nav"
+        "search" 
+        "tira"
+        "desc"
+        "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 80px 180px auto auto auto 100px;
+    }
+    /* Productos */
+    .gridProductos {
+		display: grid;
+		grid-template-areas: 
+		"header"
+        "nav"
+        "search" 
+        "indice"
+        "contenido"
+        "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 80px 180px auto auto auto 100px;
+    }
+        /* Pedido */
+        .gridPedido{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "nav"
+            "search" 
+            "titulo"
+            "pedido"
+            "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 80px 180px auto auto auto 100px;
+        }
+
+        /* Eventos */
+        .gridEventos{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "nav"
+            "search" 
+            "evento1"
+            "evento2"
+            "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 80px 180px auto auto auto 100px;
+        }
+
+        /* Nosotros */
+        .gridNosotros{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "nav"
+            "search" 
+            "equipo"
+            "ubicacion"
+            "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 80px 180px auto auto auto 100px;
+        }
+
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    form {
+        grid-area: search;
+    }
+    .indiceProductos {
+        grid-area: indice;
+    }
+    .listaProductos {
+            grid-area: contenido;
+    }
+    .titulo__pedido {
+        grid-area: titulo;
+    }
+    .pedido {
+        grid-area: pedido;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+    /* estilos nav bar */
+    #logoHeader{
+        height: 80px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .logoIndex {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar__background {
+        background-color:blueviolet;
+    }
+    .navbar--position {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    #search {
+        padding-right: 5px;
+    }
+    .searchBar{
+        padding: 5px 0;
+    }
+    .resumen__fondo img:not(:first-child) {
+        display: none;
+    }
+
+     /* estilos footer */
+    #logoFooter {
+        display: none;
+    }
+    .links__footer h3 {
+        padding: 0 10px;
+        border-right-style: solid;
+        border-right-color: indigo;
+        border-right-width: 5px;
+    }
+    footer{
+        justify-content: center;
+    }
+
+/* estilos seccion Productos */
+    .productoInfo {
+        flex-direction: column;
+    }
+    th > img {
+        display: none;
+    }
+    td {
+        padding: 0 10px;
+    }
+
+    /* estilos seccion Pedido */
+    .titulo__pedido {
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    .eventoUno > img:nth-last-of-type(-n + 2) {
+        display: none;
+    }
+    .eventoDos > img:nth-last-of-type(-n + 2) {
+        display: none;
+    }
+
+    /* estilos seccion Nosotros */
+    .nosotros img {
+        width: 300px;
+    }
+    
+    .nosotros iframe {
+        width: 300px;
+        height: 225px;
+    }
+
+
+}
+/* FIN vista mobile index*/

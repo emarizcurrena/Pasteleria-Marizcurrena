@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/Logo.jpg">
+    <title>Pasteleria</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="gridPedido">
+        <!-- inicio de fila logo + nav -->
+        <!-- logo -->
+        <header class="navbar__background">
+            <div class="logoIndex">
+                <img src="../assets/img/Logo1.png" alt="Logo" id="logoHeader">
+            </div>
+        </header>
+        <!-- nav -->
+        <nav class="navbar__background">
+            <ul class="navbar--position">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="hacetupedido.html">Hacé tu pedido</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <!-- cierre de fila logo + nav -->
+        <!--inicio fila de search-->
+        <!-- search -->
+        <form id="search">
+            <div class="searchBar">
+                <input type="search" id="buscador" name="q" placeholder="buscar...">
+                <button class="lupa">&#128269</button>
+            </div>
+        </form>
+        <!-- cierre de fila search -->
+        <!-- inicio hace tu -->
+            <h1 class="titulo__pedido">Hacé tu Pedido</h1>
+            <div class="pedido">
+                <form>
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Nombre" name="nombre">
+                    </p>
+                    <p>
+                        <label for="appellido">Apellido</label>
+                        <input id="apellido" type="text" placeholder="Apellido" name="apellido">
+                    </p>
+                    <p>
+                        <label for="pedido">Seleccionar</label>
+                        <select name="pedido" id="pedido">
+                            <option value="alfajor">Torta Alfajor</option>
+                            <option value="choco">Torta Chocolate</option>
+                            <option value="lemon">Lemon Pie</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="aclaraciones">Aclaraciones</label>
+                        <br>
+                        <textarea name="aclaraciones" id="aclaraciones" cols="30" rows="5"
+                            placeholder="Aclaraciones..."></textarea>
+                    </p>
+                    <div>
+                        <input type="radio" id="entregar" name="entrega" value="entregar" checked>
+                        <label for="entregar">Entrega a Domicilio</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="loca" name="entrega" value="local">
+                        <label for="local">Retira en local</label>
+                    </div>
+                    <p>
+                        <label for="direccion">Calle</label>
+                        <input id="direccion" type="text" placeholder="Calle..." name="direccion">
+                        <label for="numero">Número</label>
+                        <input type="number" name="numero" id="numero" placeholder="Número de puerta">
+                        <label for="apto">Apto</label>
+                        <input type="text" name="apto" id="apto" placeholder="Apartmento">
+                    </p>
+                    <button>Comprar</button>
+                </form>
+            </div>
+        <!-- cierre tira de imagenes -->
+        <!-- inicio descripcion -->
+       
+        <!-- cierre descripcion -->
+        <!-- inicio de footer -->
+        <footer>
+            <div>
+                <img src="../assets/img/Logo1.png" alt="Logo" id="logoFooter">
+            </div>
+            <div class="links__footer">
+                <h3>Contacto</h3>
+                <h3>Ubicación</h3>
+                <h3>Redes</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
