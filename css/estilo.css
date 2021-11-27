@@ -50,6 +50,10 @@ footer {
 .navbar--position a {
     text-decoration: none;
     color: white;
+    transition: color .2s;
+}
+.navbar--position a:hover {
+    color: yellow;
 }
 #search {
     display: flex;
@@ -247,8 +251,19 @@ height: 200px;
     grid-area: equipo;  
 }
 
+/*animacion foto equipo*/
+@keyframes animacionEquipo {
+    0% {width: 100%};
+    50% {transform: scale(1.5,1.5)};
+    100% {width: 100%};
+}
+
 .nosotros img {
     width: 600px;
+    animation:animacionEquipo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
 }
 
 .nosotros iframe {
