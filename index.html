@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/Logo.jpg">
     <title>Pasteleria</title>
+    <!--Bootstrap - CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--MI CSS-->
     <link rel="stylesheet" href="css/estilo.css">
     <!--Animate.css fuente-->
@@ -19,74 +22,107 @@
 </head>
 
 <body>
-    <div class="gridContainer">
-        <!-- inicio de fila logo + nav -->
-        <!-- logo -->
-        <header class="navbar__background">
-            <div class="logoIndex animate__animated animate__bounce">
+    <!-- inicio de fila logo + nav -->
+    <!-- logo -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar__background fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logoIndex animate__animated animate__bounce" href="#">
                 <img src="assets/img/Logo1.png" alt="Logo" id="logoHeader">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item navbar--position mx-5">
+                        <a class="nav-link active text-white" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item navbar--position mx-5">
+                        <a class="nav-link text-white" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item navbar--position mx-5">
+                        <a class="nav-link text-white" href="pages/eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item navbar--position mx-5">
+                        <a class="nav-link text-white" href="pages/hacetupedido.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item navbar--position mx-5">
+                        <a class="nav-link text-white" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+
             </div>
-        </header>
-        <!-- nav -->
-        <nav class="navbar__background">
-            <ul class="navbar--position">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/eventos.html">Eventos</a></li>
-                <li><a href="pages/hacetupedido.html">Hacé tu pedido</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
-        <!-- cierre de fila logo + nav -->
-        <!--inicio fila de search-->
-        <!-- search -->
-        <form id="search">
-            <div class="searchBar">
-                <input type="search" id="buscador" name="q" placeholder="buscar...">
-                <button class="lupa">&#128269</button>
+        </div>
+    </nav>
+    <form class="d-flex container searchBar">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <!-- cierre de fila search -->
+    <!-- inicio de contenido -->
+    <!-- tira de imagenes -->
+    <main class="row justify-content-center tira">
+        <div id="carouselExampleControls" class="carousel slide col-md-5 col-sm-10 " data-bs-ride=" carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/torta choco2.jpg" class="d-block w-100 fotoTira" alt="Torta Chocolate">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/rogel.jpg" class="d-block w-100 fotoTira" alt="Torta Alfajor">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/masitas.jpg" class="d-block w-100 fotoTira" alt="Masitas">
+                </div>
             </div>
-        </form>
-        <!-- cierre de fila search -->
-        <!-- inicio de contenido -->
-        <!-- tira de imagenes -->
-        <main class="tira">
-            <div class="resumen__fondo">
-                <img src="assets/img/torta_choco.jpg" alt="img Torta Chocolate" class="fotoTira">
-                <img src="assets/img/torta_alfajor.jpg" alt="img Torta Alfajor" class="fotoTira">
-                <img src="assets/img/masitas.jpg" alt="img Masitas" class="fotoTira">
-            </div>
-        </main>
-        <!-- cierre tira de imagenes -->
-        <!-- inicio descripcion -->
-        <section class="descripcion">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dolores alias corrupti officia
-                facilis dolorem animi perferendis provident nihil ducimus quidem harum culpa optio. Quos impedit
-                accusamus ullam ducimus.
-                Repudiandae explicabo sint, alias eum totam ipsum error minus odio, reprehenderit, ipsa aut commodi
-                expedita illum quasi dolores quae ratione laboriosam recusandae eligendi. Nesciunt, deleniti? Asperiores
-                tempore ex voluptate molestias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dolores alias corrupti officia
-                facilis dolorem animi perferendis provident nihil ducimus quidem harum culpa optio. Quos impedit
-                accusamus ullam ducimus.
-                Repudiandae explicabo sint, alias eum totam ipsum error minus odio, reprehenderit, ipsa aut commodi
-                expedita illum quasi dolores quae ratione laboriosam recusandae eligendi. Nesciunt, deleniti? Asperiores
-                tempore ex voluptate molestias.</p>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
 
 
-        <!-- cierre descripcion -->
-        <!-- inicio de footer -->
-        <footer>
-            <div>
-                <img src="assets/img/Logo1.png" alt="Logo" id="logoFooter">
-            </div>
-            <div class="links__footer">
-                <h3>Contacto</h3>
-                <h3>Ubicación</h3>
-                <h3>Redes</h3>
-            </div>
-        </footer>
-    </div>
+    <!-- cierre tira de imagenes -->
+    <!-- inicio descripcion -->
+    <section class="descripcion">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dolores alias corrupti officia
+            facilis dolorem animi perferendis provident nihil ducimus quidem harum culpa optio. Quos impedit
+            accusamus ullam ducimus.
+            Repudiandae explicabo sint, alias eum totam ipsum error minus odio, reprehenderit, ipsa aut commodi
+            expedita illum quasi dolores quae ratione laboriosam recusandae eligendi. Nesciunt, deleniti? Asperiores
+            tempore ex voluptate molestias.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dolores alias corrupti officia
+            facilis dolorem animi perferendis provident nihil ducimus quidem harum culpa optio. Quos impedit
+            accusamus ullam ducimus.
+            Repudiandae explicabo sint, alias eum totam ipsum error minus odio, reprehenderit, ipsa aut commodi
+            expedita illum quasi dolores quae ratione laboriosam recusandae eligendi. Nesciunt, deleniti? Asperiores
+            tempore ex voluptate molestias.</p>
+    </section>
+
+
+    <!-- cierre descripcion -->
+    <!-- inicio de footer -->
+    <footer>
+        <div>
+            <img src="assets/img/Logo1.png" alt="Logo" id="logoFooter">
+        </div>
+        <div class="links__footer">
+            <h3>Contacto</h3>
+            <h3>Ubicación</h3>
+            <h3>Redes</h3>
+        </div>
+    </footer>
+    <!--Bootstrap - script (latest version)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
