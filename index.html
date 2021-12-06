@@ -25,7 +25,7 @@
     <!-- inicio de fila logo + nav -->
     <!-- logo -->
     <nav class="navbar navbar-expand-lg navbar-light navbar__background fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid linkBar">
             <a class="navbar-brand logoIndex animate__animated animate__bounce" href="#">
                 <img src="assets/img/Logo1.png" alt="Logo" id="logoHeader">
             </a>
@@ -36,29 +36,30 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link active text-white" href="index.html" aria-current="page">Home</a>
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link text-white" href="pages/productos.html">Productos</a>
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
                     </li>
                     <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link text-white" href="pages/eventos.html">Eventos</a>
+                        <a class="nav-link" href="pages/eventos.html">Eventos</a>
                     </li>
                     <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link text-white" href="pages/hacetupedido.html">Pedidos</a>
+                        <a class="nav-link" href="pages/hacetupedido.html">Pedidos</a>
                     </li>
                     <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link text-white" href="pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
                     </li>
                 </ul>
 
             </div>
         </div>
+        <form class="d-flex container searchBar">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
     </nav>
-    <form class="d-flex container searchBar">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+
     <!-- cierre de fila search -->
     <!-- inicio de contenido -->
     <!-- tira de imagenes -->
