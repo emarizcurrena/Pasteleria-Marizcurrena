@@ -22,73 +22,76 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar__background fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand logoIndex animate__animated animate__bounce" href="#">
-                <img src="../assets/img/Logo1.png" alt="Logo" id="logoHeader">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="productos.html" aria-current="page">Productos</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link active" href="eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="hacetupedido.html">Pedidos</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
 
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light navbar__background fixed-top">
+            <div class="container-fluid linkBar">
+                <a class="navbar-brand logoIndex animate__animated animate__bounce" href="#">
+                    <img src="../assets/img/Logo1.png" alt="Logo" id="logoHeader">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="../index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link active" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="hacetupedido.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <form class="d-flex container searchBar">
-        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
-    <!-- cierre de fila search -->
-    <!-- inicio eventos -->
-    <section class="evento container col-md-8">
-        <h2 class="titulo__seccion">Evento 1</h2>
-        <img src="https://pagina66.com/upload/img/periodico/img_43482.jpg" alt="img Evento 1">
-        <img src="https://us.123rf.com/450wm/maximkabb/maximkabb1602/maximkabb160200275/52251253-decorado-pastelitos-de-colores-y-postres-en-una-mesa-dulce-en-alg%C3%BAn-evento-festivo.jpg?ver=6"
-            alt="img Evento 1">
-        <img src="https://cdn7.craftologia.com/ss_secreto/3098/1900x1080/3098.jpg.webp" alt="img Evento 1">
-    </section>
-    <section class="evento container col-md-8">
-        <h2 class="titulo__seccion">Evento 2</h2>
-        <img src="https://pagina66.com/upload/img/periodico/img_43482.jpg" alt="img Evento 1">
-        <img src="https://us.123rf.com/450wm/maximkabb/maximkabb1602/maximkabb160200275/52251253-decorado-pastelitos-de-colores-y-postres-en-una-mesa-dulce-en-alg%C3%BAn-evento-festivo.jpg?ver=6"
-            alt="img Evento 1">
-        <img src="https://cdn7.craftologia.com/ss_secreto/3098/1900x1080/3098.jpg.webp" alt="img Evento 1">
-    </section>
-    <!-- cierre contenido prodcuctos -->
-    <!-- inicio de footer -->
-    <footer>
-        <div>
-            <img src="../assets/img/Logo1.png" alt="Logo" id="logoFooter">
-        </div>
-        <div class="links__footer">
-            <h3>Contacto</h3>
-            <h3>Ubicación</h3>
-            <h3>Redes</h3>
-        </div>
-    </footer>
-    <!--Bootstrap - script (latest version)-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
+            <form class="d-flex container searchBar">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </nav>
+        <!-- cierre de fila search -->
+        <!-- inicio eventos -->
+        <section class="contenidoEventos">
+            <div class="evento container col-md-8">
+                <h2 class="titulo__seccion">Evento 1</h2>
+                <img src="https://pagina66.com/upload/img/periodico/img_43482.jpg" alt="img Evento 1">
+                <img src="https://us.123rf.com/450wm/maximkabb/maximkabb1602/maximkabb160200275/52251253-decorado-pastelitos-de-colores-y-postres-en-una-mesa-dulce-en-alg%C3%BAn-evento-festivo.jpg?ver=6"
+                    alt="img Evento 1">
+                <img src="https://cdn7.craftologia.com/ss_secreto/3098/1900x1080/3098.jpg.webp" alt="img Evento 1">
+            </div>
+            <div class="evento container col-md-8">
+                <h2 class="titulo__seccion">Evento 2</h2>
+                <img src="https://pagina66.com/upload/img/periodico/img_43482.jpg" alt="img Evento 1">
+                <img src="https://us.123rf.com/450wm/maximkabb/maximkabb1602/maximkabb160200275/52251253-decorado-pastelitos-de-colores-y-postres-en-una-mesa-dulce-en-alg%C3%BAn-evento-festivo.jpg?ver=6"
+                    alt="img Evento 1">
+                <img src="https://cdn7.craftologia.com/ss_secreto/3098/1900x1080/3098.jpg.webp" alt="img Evento 1">
+            </div>
+        </section>
+        <!-- cierre contenido prodcuctos -->
+        <!-- inicio de footer -->
+        <footer>
+            <div>
+                <img src="../assets/img/Logo1.png" alt="Logo" id="logoFooter">
+            </div>
+            <div class="links__footer">
+                <h3>Contacto</h3>
+                <h3>Ubicación</h3>
+                <h3>Redes</h3>
+            </div>
+        </footer>
+        <!--Bootstrap - script (latest version)-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>

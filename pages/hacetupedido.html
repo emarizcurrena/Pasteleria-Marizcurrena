@@ -22,113 +22,113 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar__background fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand logoIndex animate__animated animate__bounce" href="#">
-                <img src="../assets/img/Logo1.png" alt="Logo" id="logoHeader">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="productos.html" aria-current="page">Productos</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link active" href="hacetupedido.html">Pedidos</a>
-                    </li>
-                    <li class="nav-item navbar--position mx-5">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
 
-            </div>
-        </div>
-    </nav>
-    <form class="d-flex container searchBar">
-        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
-    <!-- cierre de fila search -->
-    <!-- inicio hace tu -->
-    <h1 class="titulo__pedido">Hacé tu Pedido</h1>
-    <div class="pedido">
-        <form class="container col-md-8 col-ms-5">
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
-            </div>
-            <label for="form-select">Seleccionar Productos</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccionar</option>
-                <option value="alfajor">Torta Alfajor</option>
-                <option value="choco">Torta Chocolate</option>
-                <option value="lemon">Lemon Pie</option>
-            </select>
-            <div class="aclaraciones">
-                <label for="aclaraciones">Aclaraciones</label>
-                <br>
-                <textarea name="aclaraciones" id="aclaraciones" cols="60" rows="5"
-                    placeholder="Aclaraciones..."></textarea>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="local" checked>
-                <label class="form-check-label" for="local">
-                    Retira en Local
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="entrega">
-                <label class="form-check-label" for="entrega">
-                    Entrega a Domicilio
-                </label>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Calle..." aria-label="calle">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Número de Puerta" aria-label="numero">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Apartamento" aria-label="apto">
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light navbar__background fixed-top">
+            <div class="container-fluid linkBar">
+                <a class="navbar-brand logoIndex animate__animated animate__bounce" href="#">
+                    <img src="../assets/img/Logo1.png" alt="Logo" id="logoHeader">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="../index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link active" href="hacetupedido.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item navbar--position mx-5">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <button type="button" class="btn btn-warning botonComprar">Comprar</button>
-        </form>
-    </div>
-    <!-- cierre tira de imagenes -->
-    <!-- inicio descripcion -->
+            <form class="d-flex container searchBar">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </nav>
+        <!-- cierre de fila search -->
+        <!-- inicio hace tu -->
+        <h1 class="titulo__pedido">Hacé tu Pedido</h1>
+        <div class="pedido">
+            <form class="container col-md-8 col-ms-5">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+                </div>
+                <label for="form-select">Seleccionar Productos</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccionar</option>
+                    <option value="alfajor">Torta Alfajor</option>
+                    <option value="choco">Torta Chocolate</option>
+                    <option value="lemon">Lemon Pie</option>
+                </select>
+                <div class="aclaraciones">
+                    <label for="aclaraciones">Aclaraciones</label>
+                    <br>
+                    <textarea name="aclaraciones" id="aclaraciones" rows="5" placeholder="Aclaraciones..."></textarea>
+                </div>
 
-    <!-- cierre descripcion -->
-    <!-- inicio de footer -->
-    <footer>
-        <div>
-            <img src="../assets/img/Logo1.png" alt="Logo" id="logoFooter">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="local" checked>
+                    <label class="form-check-label" for="local">
+                        Retira en Local
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="entrega">
+                    <label class="form-check-label" for="entrega">
+                        Entrega a Domicilio
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Calle..." aria-label="calle">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Número de Puerta" aria-label="numero">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apartamento" aria-label="apto">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-warning botonComprar">Comprar</button>
+            </form>
         </div>
-        <div class="links__footer">
-            <h3>Contacto</h3>
-            <h3>Ubicación</h3>
-            <h3>Redes</h3>
-        </div>
-    </footer>
-    <!--Bootstrap - script (latest version)-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
+        <!-- cierre tira de imagenes -->
+        <!-- inicio descripcion -->
+
+        <!-- cierre descripcion -->
+        <!-- inicio de footer -->
+        <footer>
+            <div>
+                <img src="../assets/img/Logo1.png" alt="Logo" id="logoFooter">
+            </div>
+            <div class="links__footer">
+                <h3>Contacto</h3>
+                <h3>Ubicación</h3>
+                <h3>Redes</h3>
+            </div>
+        </footer>
+        <!--Bootstrap - script (latest version)-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>
