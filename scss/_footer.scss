@@ -1,0 +1,43 @@
+footer {
+    background-color: $fondofoot;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#logoFooter {
+    height: 80%;
+    padding-left: 60px;
+}
+footer div {
+    display: flex;
+    align-items: center;
+}
+.links__footer {
+    display: flex;
+}
+.links__footer h3 {
+    padding: 0 100px 0 50px;
+    border-right-style: solid;
+    border-right-color: indigo;
+    border-right-width: 5px;
+    &:last-child {
+        border: none;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    #logoFooter {
+        display: none;
+    }
+    .links__footer h3 {
+        padding: 0 10px;
+        border-right-style: solid;
+        border-right-color: indigo;
+        border-right-width: 5px;
+    }
+    footer{
+        justify-content: center;
+    }
+}
