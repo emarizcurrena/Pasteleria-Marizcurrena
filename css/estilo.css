@@ -33,6 +33,10 @@ footer {
     list-style: none;
 }
 
+.fixed-top {
+    position: relative;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: white;
     transition: color .2s;

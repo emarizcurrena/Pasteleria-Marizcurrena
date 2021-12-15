@@ -1,5 +1,5 @@
 footer {
-    background-color: $fondofoot;
+    background-color: map-get($paletaColores,fondofoot);
     display: flex;
     justify-content: space-between;
     height: 100px;

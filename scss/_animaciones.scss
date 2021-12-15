@@ -1,0 +1,14 @@
+/*animacion foto equipo*/
+@keyframes animacionEquipo {
+    0% {width: 100%};
+    50% {transform: scale(1.5,1.5)};
+    100% {width: 100%};
+}
+
+.nosotros img {
+    width: 600px;
+    animation:animacionEquipo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+}

@@ -1,8 +1,8 @@
+/* estilos Productos */
+
 .tira {
-    grid-area: tira;
-    background-image: url(https://image.freepik.com/free-vector/pastries-desserts-collection-set-hand-drawn-style_34259-414.jpg);
-    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.5);
-    margin-top: 180px;
+    @extend.fondoTransparencia;
+    margin-top: $marginTop;
 }
 .resumen__fondo {
     display: flex;
@@ -19,3 +19,158 @@
     grid-area: desc;
     padding: 30px 60px;
 }
+
+
+/* estilos productos */
+
+.indiceProductos {
+    display: flex;
+    justify-content: center;
+    margin-top: $marginTop;
+}
+
+td {
+    text-align: center;
+}
+
+.listaProductos {
+    padding: 40px 20px;
+}
+
+.productoInfo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.nombreProducto {
+    padding-left: 10px;
+}
+
+
+/* estilos eventos */
+
+.contenidoEventos {
+    margin-top: $marginTop;
+}
+
+.evento {
+    margin-bottom: 30px;
+    justify-self: center;
+}
+
+/* estilos pedidos */
+
+.titulo__pedido {
+    display: flex;
+    flex-basis: content;
+}
+.pedido {
+    @extend.fondoTransparencia;
+    padding: 30px 30px;
+    margin-bottom: 40px;
+    margin-top: $marginTop;
+}
+
+.pedido form {
+    background-color: #ffffffd6;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.54);
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+.aclaraciones {
+    margin: 20px 0px;
+}
+.titulo__pedido {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.titulo__seccion {
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+#aclaraciones {
+    width: 100%;
+}
+
+.botonComprar {
+    margin-top: 20px;
+}
+
+/*grid pagina Nosotros*/
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros {
+    grid-column: 1/-1;
+    @include flex-column-center;
+}
+
+.equipo {
+    margin-top: $marginTop;  
+}
+
+.nosotros iframe {
+    width: 600px;
+    height: 450px;
+}
+
+.ubicacion {
+    margin-bottom: 40px;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+
+    /* estilos Productos mobile */
+    .productoInfo {
+        flex-direction: column;
+    }
+
+    td {
+        padding: 0 10px;
+    }
+
+
+    /* estilos Eventos mobile */
+    .titulo__pedido {
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    .contenidoEventos {
+        margin-top: 200px;
+    }
+    
+    .evento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     /* estilos Pedido mobile */
+    .titulo__pedido {
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    /* estilos nosotros mobile */
+    .nosotros iframe {
+        width: 300px;
+        height: 225px;
+    }
+}
+
+
+
