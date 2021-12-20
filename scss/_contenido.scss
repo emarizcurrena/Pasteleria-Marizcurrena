@@ -16,7 +16,6 @@
 }
 /* estilos descripcion */
 .descripcion {
-    grid-area: desc;
     padding: 30px 60px;
 }
 
@@ -26,26 +25,31 @@
 .indiceProductos {
     display: flex;
     justify-content: center;
+}
+.card-group {
     margin-top: $marginTop;
+    width:fit-content;
 }
 
-td {
+.card-title {
     text-align: center;
 }
 
 .listaProductos {
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .productoInfo {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
+    &:nth-of-type(odd) {
+        background-color: map-get($paletaColores,beige);
+    } 
 }
 
 .nombreProducto {
     padding-left: 10px;
 }
-
 
 /* estilos eventos */
 
@@ -142,6 +146,18 @@ td {
         padding: 0 10px;
     }
 
+    .card-group {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-title {
+        height: 10px;
+        font-size: 15px;
+    }
+
 
     /* estilos Eventos mobile */
     .titulo__pedido {
@@ -150,7 +166,7 @@ td {
     }
 
     .contenidoEventos {
-        margin-top: 200px;
+        margin-top: 60px;
     }
     
     .evento {
@@ -161,6 +177,7 @@ td {
 
      /* estilos Pedido mobile */
     .titulo__pedido {
+        margin-top: 30px;
         font-size: 25px;
         padding-left: 15px;
     }

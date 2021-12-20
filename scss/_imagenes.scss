@@ -13,6 +13,10 @@
         padding: 5px;
     }
 
+    .card img {
+        height: 150px;
+        padding: 5px;
+    }
 
     /* imagenes Eventos */
     .evento img {
@@ -30,8 +34,13 @@
 
 
         /* imagenes Productos mobile */
-        th > img {
+       
+        .card img {
             display: none;
+        }
+
+        .productoInfo img {
+            height: 300px;
         }
 
     /* imagenes Eventos mobile */
