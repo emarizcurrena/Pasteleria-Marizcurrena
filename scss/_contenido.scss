@@ -1,5 +1,4 @@
 /* estilos Productos */
-
 .tira {
     @extend.fondoTransparencia;
     margin-top: $marginTop;
@@ -15,7 +14,7 @@
 }
 /* estilos descripcion */
 .descripcion {
-    padding: 30px 60px;
+    margin: 30px 60px;
 }
 
 
