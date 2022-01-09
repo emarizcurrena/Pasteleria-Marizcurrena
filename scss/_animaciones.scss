@@ -1,14 +1,26 @@
 /*animacion foto equipo*/
-@keyframes animacionEquipo {
-    0% {width: 100%};
-    50% {transform: scale(1.5,1.5)};
-    100% {width: 100%};
+
+.felizAno {
+   position: absolute;
+   left: 30%;
+   visibility: hidden;
 }
 
-.nosotros img {
-    width: 600px;
-    animation:animacionEquipo;
-    animation-duration: 5s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
+@keyframes animacionFeliz {
+   0% {visibility: visible};
+   50% {transform: scale(1.5, 1.5)};
+   100% {visibility: hidden};
+}
+
+#feliz {
+   animation:animacionFeliz;
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: 2;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+   .felizAno {
+      left: 10%;
+   }
 }

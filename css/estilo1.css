@@ -78,7 +78,6 @@ body {
   justify-content: center; }
 
 .fotoTira {
-  height: 300px;
   padding: 10px;
   display: flex; }
 
@@ -89,7 +88,8 @@ body {
 /* estilos productos */
 .indiceProductos {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 40px; }
 
 .card-group {
   margin-top: 50px;
@@ -101,14 +101,52 @@ body {
 .listaProductos {
   padding: 60px 20px; }
 
+.tituloLink {
+  margin: 20px 50px;
+  border-color: #F5F5DC;
+  border-width: 10px;
+  border-style: dotted;
+  font-family: 'Mochiy Pop One', sans-serif;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 25px; }
+
 .productoInfo {
   display: flex;
   margin-bottom: 10px; }
   .productoInfo:nth-of-type(odd) {
     background-color: #F5F5DC; }
 
+.linksProductos {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  justify-content: center; }
+
+.productoInfo {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.fotoProducto {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 100%; }
+
 .nombreProducto {
-  padding-left: 10px; }
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 22px; }
+
+.descripcionProducto {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 20px; }
 
 /* estilos eventos */
 .contenidoEventos {
@@ -175,18 +213,36 @@ body {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   /* estilos Productos mobile */
-  .productoInfo {
-    flex-direction: column; }
-  td {
-    padding: 0 10px; }
   .card-group {
     margin-left: 0px;
     margin-right: 0px;
     display: flex;
     justify-content: center; }
   .card-title {
-    height: 10px;
-    font-size: 15px; }
+    height: 15px;
+    font-size: 20px; }
+  .tituloLink {
+    border-color: #F5F5DC;
+    border-width: 10px;
+    border-style: dotted;
+    font-family: 'Mochiy Pop One', sans-serif;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .productoInfo {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .fotoProducto {
+    width: 100%; }
+  .nombreProducto {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 10px; }
+  .descripcionProducto {
+    grid-column: 1;
+    grid-row: 4; }
   /* estilos Eventos mobile */
   .titulo__pedido {
     font-size: 25px;
@@ -224,37 +280,65 @@ footer div {
 .links__footer {
   display: flex; }
 
-.links__footer h3 {
-  padding: 0 100px 0 50px;
+.links__footer .footerTitulo {
+  display: flex;
+  padding: 0 50px 0 50px;
   border-right-style: solid;
-  border-right-color: indigo;
+  border-right-color: blueviolet;
   border-right-width: 5px; }
-  .links__footer h3:last-child {
+  .links__footer .footerTitulo:last-child {
     border: none; }
+
+.footerTitulo {
+  flex-direction: column;
+  font-size: 23px;
+  font-weight: 500; }
+
+.footerContenido {
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400; }
+
+.footerTitulo .redes {
+  display: flex; }
+
+a {
+  color: inherit; }
+
+.iconosRedes {
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 3px; }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   #logoFooter {
     display: none; }
-  .links__footer h3 {
+  .links__footer .footerTitulo {
     padding: 0 10px;
     border-right-style: solid;
-    border-right-color: indigo;
+    border-right-color: blueviolet;
     border-right-width: 5px; }
   footer {
-    justify-content: center; } }
+    justify-content: center; }
+  .footerTitulo {
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400; }
+  .footerContenido {
+    flex-direction: column;
+    font-size: 14px; } }
 
 .fondoTransparencia, .tira, .pedido {
   background-image: url(https://image.freepik.com/free-vector/pastries-desserts-collection-set-hand-drawn-style_34259-414.jpg);
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5); }
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+  width: 100%; }
 
 /* imagenes Productos */
-.productoInfo img {
-  height: 200px; }
+.fotoTira {
+  width: 100%; }
 
-th img {
-  height: 100px;
-  padding: 5px; }
-
+/* imagenes Productos */
 .card img {
   height: 150px;
   padding: 5px; }
@@ -272,8 +356,8 @@ th img {
   /* imagenes Productos mobile */
   .card img {
     display: none; }
-  .productoInfo img {
-    height: 300px; }
+  .fotoProducto {
+    width: 100%; }
   /* imagenes Eventos mobile */
   .evento > img:nth-last-of-type(-n + 2) {
     display: none; }
@@ -282,17 +366,25 @@ th img {
     width: 300px; } }
 
 /*animacion foto equipo*/
-@keyframes animacionEquipo {
+.felizAno {
+  position: absolute;
+  left: 30%;
+  visibility: hidden; }
+
+@keyframes animacionFeliz {
   0% {
-    width: 100%; }
+    visibility: visible; }
   50% {
     transform: scale(1.5, 1.5); }
   100% {
-    width: 100%; } }
+    visibility: hidden; } }
 
-.nosotros img {
-  width: 600px;
-  animation: animacionEquipo;
-  animation-duration: 5s;
+#feliz {
+  animation: animacionFeliz;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
-  animation-delay: 1s; }
+  animation-iteration-count: 2; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .felizAno {
+    left: 10%; } }

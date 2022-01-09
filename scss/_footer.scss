@@ -16,28 +16,62 @@ footer div {
 .links__footer {
     display: flex;
 }
-.links__footer h3 {
-    padding: 0 100px 0 50px;
+.links__footer .footerTitulo {
+    display: flex;
+    padding: 0 50px 0 50px;
     border-right-style: solid;
-    border-right-color: indigo;
+    border-right-color: map-get($paletaColores,fondonav);
     border-right-width: 5px;
     &:last-child {
         border: none;
     }
 }
 
+.footerTitulo {
+    flex-direction: column;
+    font-size: 23px;
+    font-weight: 500;
+}
+.footerContenido {
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footerTitulo .redes {
+    display: flex;
+}
+
+a {
+    color: inherit;
+}
+
+.iconosRedes {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
 
 @media only screen and (min-width: 0px) and (max-width: 768px){
     #logoFooter {
         display: none;
     }
-    .links__footer h3 {
+    .links__footer .footerTitulo {
         padding: 0 10px;
         border-right-style: solid;
-        border-right-color: indigo;
+        border-right-color: map-get($paletaColores,fondonav);
         border-right-width: 5px;
     }
     footer{
         justify-content: center;
+    }
+    .footerTitulo {
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .footerContenido {
+        flex-direction: column;
+        font-size: 14px;
     }
 }
