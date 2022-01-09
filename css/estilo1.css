@@ -267,7 +267,7 @@ footer {
   background-color: grey;
   display: flex;
   justify-content: space-between;
-  height: 100px; }
+  height: 100%; }
 
 #logoFooter {
   height: 80%;
@@ -387,4 +387,4 @@ a {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .felizAno {
-    left: 10%; } }
+    left: 0%; } }
