@@ -1,0 +1,32 @@
+{
+    "tiposDePrestamo": [
+        {
+            "id": 1,
+            "tipo": "casa",
+            "porcentaje": 7,
+            "maximo": 100000,
+            "maxCuotas": 60
+        },
+        {
+            "id": 2,
+            "tipo": "auto",
+            "porcentaje": 12,
+            "maximo": 10000,
+            "maxCuotas": 24
+        },
+        {
+            "id": 3,
+            "tipo": "negocio",
+            "porcentaje": 8,
+            "maximo": 30000,
+            "maxCuotas": 36
+        },
+        {
+            "id": 4,
+            "tipo": "moto",
+            "porcentaje": 5,
+            "maximo": 2000,
+            "maxCuotas": 12
+        }
+    ]
+}
